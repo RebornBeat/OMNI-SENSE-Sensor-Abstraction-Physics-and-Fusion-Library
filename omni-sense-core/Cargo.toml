@@ -1,0 +1,17 @@
+toml
+[package]
+name = "omni-sense-core"
+version = "0.1.0"
+edition = "2021"
+description = "Core sensor traits, DetectionEvent contract, and fundamental types for OMNI-SENSE"
+license = "MIT"
+
+[dependencies]
+nalgebra = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+
+[features]
+default = ["std"]
+std = []
+camera = []
